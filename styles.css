@@ -1,3 +1,38 @@
+nav {
+  background-color: #6e072d;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  color: white;
+  font-size: 18px;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav li:hover {
+  background-color: #b90e4d;
+}
+
+/* Border between Product | Testimonials | Pricing */
+nav ul:first-child li:not(:last-child) {
+  border-right: 2px solid white;
+}
+
+/* Border between Team | Contact Us */
+nav ul:last-child li:last-child {
+  border-left: 2px solid white;
+}
 
 
 
